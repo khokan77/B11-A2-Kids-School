@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+body{
+    margin: 20px 50px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+.orange-color{
+    color: rgb(254, 163, 1);
+}
+
+.blue-color{
+    color: rgb(1, 172, 253);
+}
+
+.green-color{
+    color: rgb(5, 212, 223);
+}
+
+.violet-color{
+    color: rgb(93, 88, 239)
+}
+
+
+/* shared style */
+.dispaly-flex{
+    display: flex;
+}   
+
+
+/* header style */
+
+header nav ul li a{
+   text-decoration: none;
+}
+
+.header-title{
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo-text-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list{
+    gap: 30px;
+}
+
+.nav-list-item{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-orange{
+    width: 197px;
+    height: 50px;
+    background-color: rgb(254, 163, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    /* color: white; */
+    border: none;
+    cursor: pointer;
+}
+
+/*  banner style */
+
+@media screen and (max-width:576px) {  
+
+    .hamburger {
+        display: block; /* Show hamburger button */
+    }
+    .nav-list {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        /* top: 50px;
+        right: 20px; */
+        background-color: #333;
+        border: 1px solid #444;
+        width: 150px;
+        padding: 10px 0;
+    }
+    .btn-orange{
+        display: none;
+    }
+
+    .header-container{
+        border: 1px solid orange;
+        padding: 10px;
+    }
+}
