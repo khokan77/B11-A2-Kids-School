@@ -12,13 +12,20 @@
  }
 
 body{
-    /* margin: 20px 50px; */
-    width: 1158.61px;
     margin: 20px auto;
 }
 
+header{   
+    margin: 20px auto;
+}
 header nav ul li{
     list-style: none;
+}
+
+/* shared style */
+.bg-area{
+    width: 1158.61px;
+    margin: 20px auto;
 }
 
 .orange-color{
@@ -38,7 +45,7 @@ header nav ul li{
 }
 
 
-/* shared style */
+
 .display-flex{
     display: flex;
 }   
@@ -64,6 +71,8 @@ header nav ul li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1160px;
+    margin: auto;
 }
 
 .nav-items{
@@ -133,6 +142,10 @@ header nav ul li a{
 }
 
 /* Curriculum style */
+
+.curriculumn-container{
+    background: url('/assets/bg.png');
+}
 
 .curriculum-text{
     text-align: center;
@@ -216,6 +229,70 @@ header nav ul li a{
     border: none;
     margin-top: 80px;
     padding: 5px;
+}
+
+/* stories style */
+.stories-container{
+    height: 630.52px;
+    background: url('/assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    margin: auto;
+}
+
+.stories-items{
+    width: 1160px;
+    margin: auto;
+    gap: 19px;
+}
+
+.stories-left-container{
+    width: 540px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.stories-left-title{
+    width: 402.49px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 51px;
+}
+
+.stories-left-desc{
+    width: 433.06px;
+    font-size: 15.34px;
+    font-weight: 500;
+    margin-top: 41px;
+}
+
+.stories-text{
+    text-align: center;
+}
+
+.stories-right-container{
+    width: 601px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+
+.stories-right-items{
+    width: 290.69px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    /* text-align: center; */
+    /* align-items: center; */
+}
+
+.stories-right-item-img{
+    width: 291px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.stories-right-item-desc{
+    width: 198.04px;
+    font-size: 15.34px;
+    font-weight: 700;
+    text-align: center;
 }
 
 @media screen and (max-width:576px) {  
