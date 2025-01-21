@@ -7,25 +7,39 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header-container dispaly-flex">
-        <div class="logo-text-wrapper ">
-            <img src="assets/logo.png" alt="logo" class="logo">
-            <span class="header-title">SCHOOL</span>
+    <header>
+        <div class="header-container dispaly-flex hide">
+            <div class="logo-text-wrapper dispaly-flex">
+                <img src="assets/logo.png" alt="logo" class="logo">
+                <span class="header-title">SCHOOL</span>
+            </div>
+            <nav>
+                <button class="hamburger" id="hamburger">
+                    ☰
+                </button>
+               <ul class="nav-items dispaly-flex">
+                   <li><a class="nav-item orange-color" href="#">Home</a></li>
+                   <li><a class="nav-item blue-color" href="#">About</a></li>
+                   <li><a class="nav-item green-color" href="#">Facilities</a></li>
+                   <li><a class="nav-item violet-color" href="#">Admission</a></li>
+               </ul>
+           </nav>
+           <button class="btn-orange">Contact</button>
+        </div> 
+        <div class="banner-container dispaly-flex hide">
+            <div class="banner-items">
+                <h1 class="banner-item-text">
+                    Empowering students from small age towards vision
+                </h1>
+                <p class="banner-desc">
+                    With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.
+                </p>
+                <button class="btn-black">
+                    Enroll Now
+                </button>
+            </div>
+            <img src="assets/hero-kids.png" alt="" class="banner-img">
         </div>
-        
-        <nav>
-             <button class="hamburger" id="hamburger">
-            ☰
-        </button>
-            <ul class="nav-list dispaly-flex">
-                <li><a class="nav-list-item orange-color" href="#">Home</a></li>
-                <li><a class="nav-list-item blue-color" href="#">About</a></li>
-                <li><a class="nav-list-item green-color" href="#">Facilities</a></li>
-                <li><a class="nav-list-item violet-color" href="#">Admission</a></li>
-            </ul>
-        </nav>
-        <button class="btn-orange">Contact</button>
-        
     </header>
     <main>
 
