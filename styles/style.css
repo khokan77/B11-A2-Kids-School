@@ -114,7 +114,7 @@ header nav ul li a{
 }
 
 .banner-items{
-    max-width: 640px;
+    width: 640px;
 }
 
 .banner-item-text{
@@ -359,7 +359,7 @@ header nav ul li a{
     height: 47.93px;
     border-radius: 47.93px;
     background: rgb(149, 178, 38);
-    left: 70px;
+    left: 50px;
     top: -99px;
     border: none;
     font-family: Raleway;
@@ -372,7 +372,7 @@ header nav ul li a{
     height: 47.93px;
     border-radius: 47.93px;
     background: rgb(93, 88, 240);
-    left: 70px;
+    left: 50px;
     top: -99px;
     border: none;
     font-family: Raleway;
@@ -493,19 +493,23 @@ footer{
     .banner-container{
         flex-direction: column-reverse;
     }
- 
+    .banner-items{
+        width: 100%;
+    }
+
     .banner-img
     {
         width: 100%;
         margin-bottom: 30px;
     }
     .banner-item-text-span1{
-        margin-left: 100px;
+        /* margin-left: 10px; */
+        margin: auto;
     }
 
     .banner-item-text{
         /* position: absolute; */
-        text-align: center;
+        text-align: center;banner-descbanner-items
         font-size: 40px;
         width: 80%;
         margin: auto;
