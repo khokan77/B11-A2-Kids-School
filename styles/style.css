@@ -24,7 +24,7 @@ header nav ul li{
 
 /* shared style */
 .bg-area{
-    width: 1158.61px;
+    /* width: 1158.61px; */
     margin: 20px auto;
 }
 
@@ -114,13 +114,18 @@ header nav ul li a{
 }
 
 .banner-items{
-    width: 640px;
+    max-width: 640px;
 }
 
 .banner-item-text{
     font-size: 56px;
     font-weight: 700;
     margin-top: 24px 0px;
+}
+.banner-item-text-span1{
+    color: rgb(254, 163, 1);
+    margin-right: 70px;
+    overflow-wrap: break-word;
 }
 
 .banner-desc{
@@ -288,7 +293,7 @@ header nav ul li a{
 }
 
 .stories-right-container{
-    width: 601px;
+    MAX-width: 601px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 19px;
@@ -334,7 +339,78 @@ header nav ul li a{
 
 }
 
+footer{
+    height: 519px;
+    background: rgb(1, 172, 253);
+}
+
+.kids-container{
+    /* Group 35 */
+    position: absolute;
+    /* max-width: 1070.91px; */
+    height: 222px;
+    left: 141px;
+    right: 228.09px;
+    top: 2695px;
+    bottom: 175px;
+    display: flex;
+    /* padding: 140px; */
+}
+
+.kids-items-left{
+    
+}
+
+.logo-footer{
+    /* background: rgb(255, 255, 255); */
+    width: 82.9px;
+    height: 81.65px;
+}
+
+.kids-items-left-text{
+    color: white;
+    font-size: 42.14px;
+    font-weight: 700;
+    text-align: left;
+    vertical-align: top;
+    width: 206.11px;
+    height: 80px;
+    line-height: 39.51px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+}
+
+.kids-item-left-desc{
+    width: 400px;
+    margin-right: 172px;
+    color: rgb(255, 255, 255);
+}
+
+
+.kids-items-middle{
+    margin-right: 172px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    /* width: 156.36px; */
+}
+
+.kids-items-middle-text{
+    width: 156.36px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    width: 177.12px;
+}
+
 @media screen and (max-width:576px) {  
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
 
     .hamburger {
         display: block; /* Show hamburger button */
@@ -357,20 +433,114 @@ header nav ul li a{
     .header-container{
         border: 1px solid orange;
         padding: 10px;
+        width: 100%;
     }
 
     .banner-container{
         flex-direction: column-reverse;
     }
+    .banner-img
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .banner-item-text-span1{
+        margin-left: 50px;
+    }
 
+    .banner-item-text{
+        position: absolute;
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+    }
+    
+    .banner-desc{
+        position: relative;
+        top: 150px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-black{
+        position: relative;
+        top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
     .curriculumn-items{
         flex-direction: column;
+        position: relative;
+        top: 120px;
     }
+
+    .curriculum-text{
+        position: relative;
+        top: 150px;
+    }
+
     .curriculumn-item{
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: center;
+    }
+
+    .curriculumn-btn-arrow{
+        display: none;
+    }
+    .stories-container{
+        width: 100%;
+        position: absolute;
+        background: url(/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+        margin: auto;
+    }
+
+    .stories-text{
+        width: 100%;
+        position: relative;
+        top: 80px;
+    }
+    .stories-right-container{
+        width: 100%;
+        /* max-width: 576px;
+        width: 60vw;
+        position: relative;
+        top: 80px;
+        gap: 5px;
+        left: 0px;
+        margin-left: 0px; */
+    }
+
+    .stories-left-container{
+        display: none;
+
+    }
+    .stories-items{
+        width: 100%;
+        /* position: relative; */
+        /* top: 80px; */
+        /* gap: 5px; */
+    }
+
+    .stories-right-items{
+        width: 100%;
+    }
+
+    .stories-right-item-img{
+        width: 100%;
+
+    }
+
+    .btn-black-ex{
+        position: relative;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }
