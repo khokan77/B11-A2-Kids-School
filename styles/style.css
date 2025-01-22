@@ -238,7 +238,7 @@ header nav ul li a{
 
 /* stories style */
 .stories-container{
-    height: 630.52px;
+    /* height: 630.52px; */
     height: 1018.02px;
     background: url('/assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     margin: auto;
@@ -340,25 +340,20 @@ header nav ul li a{
 }
 
 footer{
-    height: 519px;
+   
     background: rgb(1, 172, 253);
 }
 
 .kids-container{
-    /* Group 35 */
-    position: absolute;
-    /* max-width: 1070.91px; */
-    height: 222px;
-    left: 141px;
-    right: 228.09px;
-    top: 2695px;
-    bottom: 175px;
+    height: 519px;
     display: flex;
-    /* padding: 140px; */
+    margin-left: 147px;
+    justify-content: center;
+    align-items: center;
 }
 
 .kids-items-left{
-    
+    /* position: relative; */
 }
 
 .logo-footer{
@@ -382,6 +377,7 @@ footer{
 
 .kids-item-left-desc{
     width: 400px;
+    margin-top: 35px;
     margin-right: 172px;
     color: rgb(255, 255, 255);
 }
@@ -399,18 +395,30 @@ footer{
 .kids-items-middle-text{
     width: 156.36px;
     color: rgb(255, 255, 255);
-    font-family: Quicksand;
     font-size: 24px;
     font-weight: 700;
     text-align: left;
     width: 177.12px;
 }
 
+.kids-items-right{
+    width: 200px;
+    vertical-align: top;
+    align-content: flex-start;
+}
+
+.img-footer{
+    width: 40.61px;
+    height: 40px;
+    border-radius: 4px;
+
+    background: rgb(59, 89, 152);
+}
 @media screen and (max-width:576px) {  
-    *{
+    /* *{
         margin: 0 auto;
         padding: 0;
-    }
+    } */
 
     .hamburger {
         display: block; /* Show hamburger button */
@@ -419,8 +427,6 @@ footer{
         display: none; /* Hide menu by default */
         flex-direction: column;
         position: absolute;
-        /* top: 50px;
-        right: 20px; */
         background-color: #333;
         border: 1px solid #444;
         width: 150px;
@@ -492,9 +498,11 @@ footer{
     .curriculumn-btn-arrow{
         display: none;
     }
+
     .stories-container{
+    
         width: 100%;
-        position: absolute;
+        /* position: absolute; */
         background: url(/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
         margin: auto;
     }
@@ -542,5 +550,9 @@ footer{
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+    }
+
+    .kids-container{
+        flex-direction: column;
     }
 }
