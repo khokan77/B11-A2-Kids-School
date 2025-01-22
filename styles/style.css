@@ -298,6 +298,7 @@ header nav ul li a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 19px;
+    padding: 10px;
 }
 
 .stories-right-items{
@@ -346,7 +347,7 @@ header nav ul li a{
     height: 47.93px;
     border-radius: 47.93px;
     background: rgb(60, 216, 232);
-    left: 180px;
+    left: 90px;
     top: -260px;
     border: none;
     font-family: Raleway;
@@ -485,7 +486,7 @@ footer{
     }
 
     .header-container{
-        border: 1px solid orange;
+        border-bottom: 0.5px solid rgb(254, 163, 1);
         padding: 10px;
         width: 100%;
     }
@@ -530,6 +531,7 @@ footer{
     }
     .curriculumn-items{
         flex-direction: column;
+        padding: 10px;
    }
 
     .curriculum-text{
